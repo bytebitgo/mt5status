@@ -96,8 +96,7 @@ python mt5_api_server.py
 
 1. **启动分析任务**
 ```bash
-curl -X POST http://localhost:5000/analyze \
-     -H "x-api-key: mysecret"
+curl -X POST http://localhost:5000/analyze -H "x-api-key: mysecret"
 ```
 
 响应示例：
@@ -110,8 +109,7 @@ curl -X POST http://localhost:5000/analyze \
 
 2. **查询任务状态**
 ```bash
-curl http://localhost:5000/task/<task_id> \
-     -H "x-api-key: mysecret"
+curl http://localhost:5000/task/<task_id> -H "x-api-key: mysecret"
 ```
 
 响应示例：
